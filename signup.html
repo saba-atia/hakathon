@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التسجيل - وَهِب</title>
+    <link rel="stylesheet" href="Signup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container">
+  
+        <div class="image-side">
+            
+        </div>
+
+       
+        <div class="form-side">
+            <h1>أنشئ حسابًا في <span class="logo">وَهِب</span></h1>
+            <form id="signupForm">
+                <label for="firstName">الاسم الأول:</label>
+                <input type="text" id="firstName" name="firstName" >
+                <span class="error-message" id="firstNameError"></span>
+
+                <label for="lastName">الاسم الأخير:</label>
+                <input type="text" id="lastName" name="lastName" >
+                <span class="error-message" id="lastNameError"></span>
+
+                <label for="signupEmail">البريد الإلكتروني:</label>
+                <input type="email" id="signupEmail" name="signupEmail" >
+                <span class="error-message" id="emailError"></span>
+
+                <label for="signupPassword">كلمة المرور:</label>
+                <input type="password" id="signupPassword" name="signupPassword" >
+                <span class="error-message" id="passwordError"></span>
+
+                <label for="confirmPassword">تأكيد كلمة المرور:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" >
+                <span class="error-message" id="confirmPasswordError"></span>
+
+                
+                <label>
+                    <input type="checkbox" id="terms" name="terms" >
+                    أوافق على <a href="#" onclick="showTermsModal()">الشروط والأحكام</a>
+                </label>
+                <span class="error-message" id="termsError"></span>
+
+                <button type="submit">تسجيل</button>
+            </form>
+            <p>لديك حساب بالفعل؟ <a href=""></a><a href="./Login.html">سجل دخول</a></p>
+        </div>
+    </div>
+
+  
+    <div id="termsModal" style="display: none;">
+        <h2>الشروط والأحكام</h2>
+        <p>1. يجب أن تكون جميع المعلومات المقدمة صحيحة ودقيقة.</p>
+        <p>2. يجب الموافقة على الشروط والأحكام قبل التسجيل.</p>
+        <p>3. لا يُسمح بمشاركة حسابك مع آخرين.</p>
+        <button onclick="closeTermsModal()">إغلاق</button>
+    </div>
+
+    <script src="Signup.js"></script>
+</body>
+</html>

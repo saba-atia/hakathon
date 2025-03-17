@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.4/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.4/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="./donashen2.css">
+    <title>تبرع</title>
+</head>
+<body class="body-donation">
+   
+
+    <div class="container">
+        <div class="text">
+            <h1>معًا نصنع الفرق!</h1>
+            <p>"تبرعك اليوم يمكن أن يغير حياة شخص محتاج. ساعدنا في نشر الخير وبناء مستقبل أفضل. كل مساهمة، مهما كانت صغيرة، تصنع فرقًا كبيرًا!"</p>
+           
+        </div>
+        <div class="illustration">
+            <img src="./img/volunteers-packing-donation-boxes_74855-5299.jpg" alt="Illustration">
+        </div>
+    </div>
+    <br>
+    
+
+        </div>
+    </section>
+    <br>
+
+ 
+
+    <section class="donation-options">
+        <button class="donation-btn" onclick="setDonationAmount(5)">5$</button>
+        <button class="donation-btn" onclick="setDonationAmount(10)">10$</button>
+        <button class="donation-btn" onclick="setDonationAmount(20)">20$</button>
+        <input type="number" id="customAmount" placeholder="أدخل مبلغك" oninput="setDonationAmount(this.value)">
+        <p id="selectedAmount">المبلغ المحدد: 0$</p>
+      </section>
+      
+      <section class="progress">
+        <p>تم جمع <span id="progressPercentage">0%</span> من الهدف!</p>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 0%;"></div>
+        </div>
+      </section>
+      
+      <section class="payment-methods">
+        <button class="payment-btn" onclick="selectPaymentMethod('credit')">بطاقة ائتمان</button>
+        <button class="payment-btn" onclick="selectPaymentMethod('paypal')">PayPal</button>
+        <button class="payment-btn" onclick="selectPaymentMethod('mobile')">دفع عبر الهاتف</button>
+        <p id="selectedPayment">لم تختار طريقة دفع بعد.</p>
+      </section>
+      
+      <section class="recent-donations">
+        <p id="donationUpdates">أحدث التبرعات:</p>
+      </section>
+      
+      <section class="donate-now">
+        <button onclick="donateNow()" class="donate-btn">تبرع الآن</button>
+    </section>
+    <br><br>
+
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>أعرف عنا</h3>
+            <ul>
+                <li><a href="#">مهمتنا</a></li>
+                <li><a href="#">فريق</a></li>
+                <li><a href="#">شراكات</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>دعم</h3>
+            <ul>
+                <li><a href="#">الأسئلة الشائعة</a></li>
+                <li><a href="#">سياسة الخصوصية</a></li>
+                <li><a href="#">شروط الخدمة</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>تواصل معنا</h3>
+            <p><i class="fas fa-envelope"></i> البريد الإلكتروني: support@ramadanhackathon.com</p>
+            <p><i class="fas fa-phone"></i> الهاتف: +123 456 7890</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <p>&copy; 2025 . كل الحقوق محفوظة</p>
+    </div>
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ <!-- Bootstrap JS -->
+   <!-- Bootstrap JS -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <!-- Initialize Swiper -->
+    <script src="donation.js"></script>
+</body>
+</html>
